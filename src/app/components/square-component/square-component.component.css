@@ -1,0 +1,28 @@
+.playerO {
+    font-size: 3.1em;
+    font-weight: bolder;
+    background-color: #c62828  !important;
+    color: black !important;
+}
+
+.playerX {
+    font-size: 4em;
+    background-color: #673ab7 !important;
+    color: black !important;   
+}
+
+
+
+.playable-btn {
+    margin: 0;
+    outline: inherit;
+    background: rgb(33, 37, 41);
+	color: rgb(33, 37, 41);
+	border: 2px solid #30363d;
+    padding: 0;
+	cursor: pointer;
+    height:100px;
+    width:100px;
+    vertical-align: top;
+}
+

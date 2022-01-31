@@ -1,0 +1,24 @@
+<div class="p-3 board-border rounded board bg-dark">
+    <div class="w-100 container">
+        <button class="btn-reload btn-sm w-100" (click)="game()"><i class="bi bi-arrow-counterclockwise"></i> Reiniciar</button>
+    </div>
+    <div style="height: 50px;">   
+    <div *ngIf="this.winner; else elseBlockWinner" class="text-center m-2 p-2">
+            <h5>El jugador <span [ngClass]="isPlayerONext ? 'playerO-Indicator' : 'playerX-Indicator' " [innerHTML]="getPlayerIcon()"></span> gana la partida!</h5>
+        </div>
+        <ng-template #elseBlockWinner>
+            <div class="text-center m-2 p-2 w-100">
+                <h4>Conecta 3!</h4>
+            </div>
+        </ng-template>
+    </div> 
+        <p class="text-center w-100">
+            Turno de <span [ngClass]="isPlayerONext ? 'playerO-Indicator' : 'playerX-Indicator' " [innerHTML]="getPlayerIcon()"></span>
+        </p>
+
+    <div class="board-wrap-btn" >
+        <square *ngFor="let square of this.boardSquared; let i = index" 
+        [value]="square" 
+        (click)="clickSquare(i)"></square>
+    </div>
+</div>
