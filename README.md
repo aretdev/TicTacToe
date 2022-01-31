@@ -1,4 +1,4 @@
-# Tres En Ralla
-Pequeño proyecto de tres en ralla desarrollado con angular.
+# Tres En Raya
+Pequeño proyecto de tres en raya desarrollado con angular.
 
-Para una demostración : [Pulsar Aquí](https://aretdev.github.io/TresEnRalla/ "Pulsar Aquí")
+Para una demostración : [Pulsar Aquí](https://aretdev.github.io/TresEnRaya/ "Pulsar Aquí")
